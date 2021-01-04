@@ -1,0 +1,37 @@
+.row{
+    box-sizing: border-box;
+}
+.mb-0{
+ display: flex;
+ font: 2.5em 'contact me';
+ font-family: Arial;
+ color: #fff;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+}
+.col{
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.jumbotron{
+    background-color:transparent;
+   
+}
+.media{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
