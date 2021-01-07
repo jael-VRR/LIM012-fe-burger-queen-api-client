@@ -17,6 +17,7 @@ import sa from '../images/sa.jpg';
 import github5 from '../images/github5.png';
 import html from '../images/html.png';
 import ParticlesWrapper from '../components/particles';
+//import { useWindowScroll } from "react-use";
 
 
 
@@ -26,30 +27,22 @@ import ParticlesWrapper from '../components/particles';
 const AboutMe = () => {
 
   
-    const [scrollY, setScrollY] = useState(0);
-  
-    function logit() {
-      setScrollY(window.pageYOffset);
-    }
-  
-    useEffect(() => {
-      function watchScroll() {
-        window.addEventListener("scroll", logit);
-      }
-      watchScroll();
-      // Remove listener (like componentWillUnmount)
-      return () => {
-        window.removeEventListener("scroll", logit);
-      };
-    }, []);
+  /*const { x, y } = useWindowScroll();
+  const [scrolled, setScrolled] = useState(0);
+
+  useEffect(() => {
+      const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+      setScrolled((y / height) * 100);
+  }, [y]);*/
   
 
   return (
-    <div className="wrapper">
-  
+    <div className="wrapper" >
       <ParticlesWrapper />
       <SearchingBar />
-      <Jumbotron>
+      <Jumbotron >
         <div className="card-deck" >
           <div className="card text-center">
             <Col s={6} className="card-body">
@@ -65,7 +58,6 @@ const AboutMe = () => {
             </Col>
           </div>
           <div className="card text-center" >
-            
             <Col s={6} className="card-body">
               <h2 className="text">
                 Habilidades
