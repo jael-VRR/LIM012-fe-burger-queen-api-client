@@ -12,6 +12,4 @@ const Home = () => {
     </Jumbotron>
   );
 }
-
-
 export default Home;

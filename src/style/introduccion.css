@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +30,8 @@ body {
 }*/
 .text{
     color: white;
+    font-family: 'Alegreya', serif;;
+    font-size: 2.5em;
 }
 .align-self-end.mr-5 {
     width: 400px;
@@ -41,18 +46,30 @@ body {
 .intro{
   margin-top: 120px;
 }
-@media (prefers-reduced-motion: no-preference) {
-    .align-self-end.mr-5{
-      animation: App-logo-spin ;
-      animation-duration: 6s;
-    }
+
+  
+  .text-name{
+    color:  #ccff33;
   }
-@keyframes App-logo-spin {
-    from {
-      transform: scale(0.1) translate(-100%, -100%);
-    }
-    to {
-      transform: skewY(0deg);
-    }
+
+  .word{
+    font-family: 'Anton', sans-serif;
+	  perspective: 1000px; 
   }
+
+  .word span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 80px;
+    user-select: none;
+    line-height: .8;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
   

@@ -9,9 +9,8 @@ const Btn = () => {
     return (
         <div className ="btn">
             <Button>
-                Download CV
+               <a  href="https://drive.google.com/file/d/11azypBy1lPKw4ZzdWhGc793nOVDDImy2/view?usp=sharing" download="cv-jael-rr">Download CV</a>
             </Button>
-         
         </div>
     );
 }

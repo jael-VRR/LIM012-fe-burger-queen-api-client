@@ -1,15 +1,14 @@
 import React from 'react';
-import { useState } from 'react';
-import { Jumbotron, Row, Carousel, Container } from 'react-bootstrap';
+import { Jumbotron, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchingBar from '../components/navbar';
 import '../style/projects.css';
-import datalove from '../images/datalove.png';
+import datalove2 from '../images/datalove2.png';
 import red from '../images/red.png';
-import burger from '../images/burger.png';
+import burger2 from '../images/burger2.png';
 import homar from '../images/homar.png';
 import yanbal from '../images/yanbal.png';
-import tgp from '../images/tgp.png';
+import tgp1 from '../images/tgp1.png';
 import ParticlesWrapper from '../components/particles';
 
 
@@ -17,198 +16,106 @@ import ParticlesWrapper from '../components/particles';
 
 const Projects = () => {
 
-  const [index, setIndex] = useState(0);
-  const [index1, setIndex1] = useState(0);
-  const [index2, setIndex2] = useState(0);
-  const [index3, setIndex3] = useState(0);
-  const [index4, setIndex4] = useState(0);
-  const [index5, setIndex5] = useState(0);
-
-
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
-
-  const handleSelect1 = (selectedIndex1, e) => {
-    setIndex1(selectedIndex1);
-  };
-  const handleSelect2 = (selectedIndex2, e) => {
-    setIndex2(selectedIndex2);
-  };
-  const handleSelect3 = (selectedIndex3, e) => {
-    setIndex3(selectedIndex3);
-  };
-  const handleSelect4 = (selectedIndex4, e) => {
-    setIndex4(selectedIndex4);
-  };
-  const handleSelect5 = (selectedIndex5, e) => {
-    setIndex5(selectedIndex5);
-  };
-
-
-
 
   return (
     <div className="wrapper">
       <ParticlesWrapper />
       <SearchingBar />
-      <Row className="row  justify-content-center align-items-center vh-100 mr-5">
-        <Jumbotron>
-          <Carousel >
-            <Carousel.Item>
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
+      <Jumbotron>
+        <Carousel>
+          <Carousel.Item>
+          <h3 className="text">Datalovers<span><a href=""></a></span><span><a href=""></a></span>
+          <span><a className="link" href="https://jael-vrr.github.io/LIM012-data-lovers/src/index.html">Demo</a></span>
+          <span><a className="link" href="https://github.com/jael-VRR/LIM012-data-lovers">Repositorio</a></span>
+          </h3>
+         
+            <img
+              className="d-block w-100 img-fluid"
+              src={datalove2}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+          
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+          <h3 className="text">Red Social<span><a href="#"></a></span><span><a href="#"></a></span>
+          <span><a className="link"  href="https://jael-vrr.github.io/LIM012-data-lovers/src/index.html">Demo</a></span>
+          <span><a className="link"  href="https://github.com/jael-VRR/LIM012-data-lovers">Repositorio</a></span>
+          </h3>
+            <img
+              className="d-block w-100 img-fluid"
+              src={red}
+              alt="Third slide"
+            />
 
-                    <img activeIndex={index} onSelect={handleSelect} style={{ with: "320px" }}
-                      className="d-block w-100"
-                      src={datalove}
-                      alt="First slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">Data lovers</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <Carousel.Caption>
+       
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+          <h3 className="text">Burger Queen<span><a href=""></a></span><span><a href=""></a></span>
+          <span><a className="link" href="https://burger-queen-luja.herokuapp.com/">Demo</a></span>
+          <span><a className="link" href="https://github.com/jael-VRR/LIM012-fe-burger-queen">Repositorio</a></span>
+          </h3>
+            <img
+              className="d-block w-100 img-fluid"
+              src={burger2}
+              alt="Third slide"
+            />
 
+            <Carousel.Caption>
+          
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+          <h3 className="text">Homar<span><a href=""></a></span><span><a href=""></a></span>
+          <span><a className="link" href="">Demo</a></span>
+          <span><a className="link" href="https://github.com/jael-VRR/Homar/tree/jael">Repositorio</a></span>
+          </h3>
+            <img
+              className="d-block w-100 img-fluid"
+              src={homar}
+              alt="Third slide"
+            />
 
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-                    <img activeIndex={index1} onSelect={handleSelect1}
-                      className="d-block w-100"
-                      src={red}
-                      alt="Second slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">Red social</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <Carousel.Caption>
+         
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+          <h3 className="text">Maya-clientes<span><a href=""></a></span><span><a href=""></a></span>
+          <span><a className="link" href="https://github.com/jael-VRR/mayaclientes-yanbal/tree/jael">Demo</a></span>
+          <span><a className="link" href="https://sumaqkuyay.github.io/mayaclientes-yanbal/#/">Repositorio</a></span>
+          </h3>
+            <img
+              className="d-block w-100 img-fluid"
+              src={yanbal}
+              alt="Third slide"
+            />
 
+            <Carousel.Caption>
+           
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+          <h3 className="text">Reducer<span><a href="#"></a></span><span><i></i></span>
+          <span><a className="link" href="https://tgp-legal.web.app/">Demo</a></span>
+          <span><a className="link" href="">Repositorio</a></span>
+          </h3>
+            <img
+              className="d-block w-100 img-fluid"
+              src={tgp1}
+              alt="Third slide"
+            />
 
+            <Carousel.Caption>
+           
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
 
-
-            </Carousel.Item>
-            <Carousel.Item >
-
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-
-                    <img activeIndex={index2} onSelect={handleSelect2}
-                      className="d-block w-100"
-                      src={burger}
-                      alt="Third slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">Burger Queen</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </Carousel.Item>
-
-            <Carousel.Item >
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-                    <img activeIndex={index3} onSelect={handleSelect3}
-                      className="d-block w-100"
-                      src={homar}
-                      alt="Third slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">Seguros Homar</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </Carousel.Item>
-            <Carousel.Item >
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-                    <img activeIndex={index4} onSelect={handleSelect4}
-                      className="d-block w-100"
-                      src={yanbal}
-                      alt="Third slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">YAnbal</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </Carousel.Item>
-            <Carousel.Item >
-              <div className="card mb-3" >
-                <div className="row no-gutters">
-                  <div className="col-md-6">
-                    <img activeIndex={index5} onSelect={handleSelect5}
-                      className="d-block w-100"
-                      src={tgp}
-                      alt="Third slide"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body">
-                      <div className="title-icons">
-                        <h5 className="card-title mr-4">tgp</h5>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </Carousel.Item>
-          </Carousel>
-        </Jumbotron>
-      </Row>
+      </Jumbotron>
     </div >
 
   )
