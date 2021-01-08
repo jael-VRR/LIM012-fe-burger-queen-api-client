@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/navbar.css';
 import frame from '../images/frame.png'
@@ -9,11 +9,25 @@ import frame from '../images/frame.png'
 const SearchingBar = () => {
 	return (
 		<>
-			<Navbar className="justify-content-end">
-				<Nav activeKey="/">
-					<Nav.Item >
-						<Nav.Link className="item samp" href=""><samp><img src={frame} alt="" style={{width:"60px",height:"60px"}} /></samp></Nav.Link>
-					</Nav.Item>
+			<Navbar collapseOnSelect expand="lg" variant="dark">
+				<Navbar.Brand href="#home">
+					<img
+						alt=""
+						src={frame}
+						width="60"
+						height="60"
+						className="d-inline-block align-top"
+					/>{' '}
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+				<NavDropdown  >
+         
+            
+          
+         
+          </NavDropdown>
+					<Nav  activeKey="/">
 					<Nav.Item >
 						<Nav.Link className="item" href="/">Home</Nav.Link>
 					</Nav.Item>
@@ -27,6 +41,7 @@ const SearchingBar = () => {
 						<Nav.Link className="item" href="/contactMe">Contacto</Nav.Link>
 					</Nav.Item>
 				</Nav>
+				</Navbar.Collapse>
 			</Navbar>
 		</>
 	);
