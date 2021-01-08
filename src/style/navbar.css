@@ -1,42 +1,15 @@
 
-.navbar-light .navbar-nav .nav-link.active{
-    color: white;
-    cursor: pointer;
-}
-.navbar-light .navbar-nav .nav-link {
+ .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
+.navbar-collapse {
+    justify-content: space-between;
+}
+.dropdown-menu.show {
+    background-color: black;
+}
 
-.samp{
-    box-sizing: border-box;
-    margin: 0px 1050px 10px 10px;
-    font: 1.5em 'contact me';
-    font-family: Arial;
-       text-shadow:
-           0 0 5px rgba(0,178,255,1),
-           0 0 10px rgba(0,178,255,1),
-           0 0 20px rgba(0,178,255,1),
-           0 0 40px rgba(38,104,127,1),
-           0 0 80px rgba(38,104,127,1),
-           0 0 90px rgba(38,104,127,1),
-           0 0 100px rgba(38,104,127,1),
-           0 0 140px rgba(38,104,127,1),
-           0 0 180px rgba(38,104,127,1);
-   }
- .item-nav{
-   
-    font: 1.2em 'home';
-    font-family: Arial;
-    color: #fff;
-       text-shadow:
-           0 0 5px rgba(0,178,255,1),
-           0 0 10px rgba(0,178,255,1),
-           0 0 20px rgba(0,178,255,1),
-           0 0 40px rgba(38,104,127,1),
-           0 0 80px rgba(38,104,127,1),
-           0 0 90px rgba(38,104,127,1),
-           0 0 100px rgba(38,104,127,1),
-           0 0 140px rgba(38,104,127,1),
-           0 0 180px rgba(38,104,127,1);
-
- }
+.dropdown-toggle::after {
+    border-right: black; 
+    border-left: black; 
+}
