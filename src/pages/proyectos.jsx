@@ -22,8 +22,8 @@ const Projects = () => {
       <ParticlesWrapper />
       <SearchingBar />
       <Jumbotron>
-        <Carousel>
-          <Carousel.Item>
+        <Carousel className="card text-center">
+          <Carousel.Item className="card text-center">
           <h3 className="text">Datalovers<span><a href=""></a></span><span><a href=""></a></span>
           <span><a className="link" href="https://jael-vrr.github.io/LIM012-data-lovers/src/index.html">Demo</a></span>
           <span><a className="link" href="https://github.com/jael-VRR/LIM012-data-lovers">Repositorio</a></span>
@@ -80,7 +80,6 @@ const Projects = () => {
             />
 
             <Carousel.Caption>
-         
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -104,7 +103,7 @@ const Projects = () => {
           <span><a className="link" href="">Repositorio</a></span>
           </h3>
             <img
-              className="d-block w-100 img-fluid"
+              className="d-block  w-100  img-fluid"
               src={tgp1}
               alt="Third slide"
             />
