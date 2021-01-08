@@ -1,7 +1,6 @@
 .btn{
     text-transform:uppercase;
-    letter-spacing:5px;
-    padding:20px 40px;
+    padding:20px 20px;
     transform-origin:100% 50%;
     color:black;
     position:relative;
