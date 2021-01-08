@@ -23,7 +23,7 @@ const Introduccion = () => {
        <div className="contenido-descripcion">
         <Media>
           <img 
-            className="align-self-end mr-5 img-fluid"
+            className="align-self-end  img-fluid"hero
             src={preview}
             alt="Generic placeholder"
           />
