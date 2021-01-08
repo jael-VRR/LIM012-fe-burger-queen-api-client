@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Row, Media } from 'react-bootstrap';
+import { Jumbotron, Col, Media } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchingBar from '../components/navbar';
 import preview from '../images/preview.png';
@@ -13,21 +13,25 @@ import ParticlesWrapper from '../components/particles';
 
 const Introduccion = () => {
 
-
-
   return (
     <div className="wrapper">
-       <ParticlesWrapper/> 
+      <ParticlesWrapper />
       <SearchingBar />
-      <Row className="row  justify-content-center align-items-center vh-100 ">
-       <div className="contenido-descripcion">
-        <Media>
+      <Jumbotron >
+        <div className="card-deck" >
+          <div className="card text-center">
+            <Col s={6} className="card-body">
           <img 
-            className="align-self-end  img-fluid"hero
+            className="img-fluid"
             src={preview}
+            fluid
             alt="Generic placeholder"
           />
-          <Media.Body className='intro'>
+            </Col>
+          </div>
+          <div className="card text-center1" >
+            <Col s={6} className="card-body">
+            <Media.Body className='intro'>
             <div className="word">
               <span >H</span>
               <span >o</span>
@@ -41,9 +45,10 @@ const Introduccion = () => {
             <br/>
             <h4 className="text">-Frontend Developer-</h4>
           </Media.Body>
-        </Media>
+            </Col>
+          </div>
         </div>
-      </Row>
+      </Jumbotron>
     </div>
   );
 }
