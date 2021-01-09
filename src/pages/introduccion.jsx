@@ -14,7 +14,7 @@ import ParticlesWrapper from '../components/particles';
 const Introduccion = () => {
 
   return (
-    <div className="wrapper">
+    <>
       <ParticlesWrapper />
       <SearchingBar />
       <Jumbotron >
@@ -49,7 +49,7 @@ const Introduccion = () => {
           </div>
         </div>
       </Jumbotron>
-    </div>
+    </>
   );
 }
 

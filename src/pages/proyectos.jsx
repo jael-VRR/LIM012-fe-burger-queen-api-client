@@ -23,12 +23,11 @@ const Projects = () => {
       <SearchingBar />
       <Jumbotron>
         <Carousel className="card text-center">
-          <Carousel.Item className="card text-center">
+          <Carousel.Item >
           <h3 className="text">Datalovers<span><a href=""></a></span><span><a href=""></a></span>
           <span><a className="link" href="https://jael-vrr.github.io/LIM012-data-lovers/src/index.html">Demo</a></span>
           <span><a className="link" href="https://github.com/jael-VRR/LIM012-data-lovers">Repositorio</a></span>
           </h3>
-         
             <img
               className="d-block w-100 img-fluid"
               src={datalove2}
@@ -48,9 +47,7 @@ const Projects = () => {
               src={red}
               alt="Third slide"
             />
-
             <Carousel.Caption>
-       
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

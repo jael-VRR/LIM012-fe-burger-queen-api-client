@@ -39,7 +39,8 @@ const AboutMe = () => {
   
 
   return (
-    <div className="wrapper" >
+    // <div className="wrapper" >
+    <>
       <ParticlesWrapper />
       <SearchingBar />
       <Jumbotron >
@@ -200,7 +201,8 @@ const AboutMe = () => {
           </div>
         </div>
       </Jumbotron>
-    </div>
+    {/* </div> */}
+    </>
   )
 }
 
